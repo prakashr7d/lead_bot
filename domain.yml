@@ -1,0 +1,67 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - get_name
+  - get_number
+  - get_email
+  - book
+  - About_you
+
+entities:
+  - name
+  - email
+  - phone-number
+
+slots:
+  name:
+    type: any
+  phone-number:
+    type: any
+  email:
+    type: any
+
+forms: 
+  UserForm:
+    name:
+      - type: from_entity
+        intent: get_name
+        entity: name
+    phone-number: 
+      - type: from_entity
+        entity: phone-number
+    email: 
+      - type: from_entity
+        entity: email
+  
+ 
+responses:
+  utter_greet:
+  - text: "Hai!! This is the Lead bot of the compact gyan how can i help you:"
+    buttons:
+    - title: "book for appointment"
+      payload: "I want to book for appointment"
+    - title: "About us"
+      payload: "looking about you"
+  
+  utter_about_you:
+  - text: "we are providing IT services for more companies all over the world and for more information https://www.compactgyan.com/about_us"
+  
+  utter_ask_name:
+  - text: "what is your name?"
+
+  utter_ask_phone-number:
+  - text: "what is your phone number"
+
+  utter_ask_email:
+  - text: "what is your Email_id"
+
+  utter_goodbye:
+  - text: "Bye"
+
+actions:
+  - action_submit
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: get_name
+  examples: |
+    - My name is [prakash]{"entity":"name"}
+    - [naveen]{"entity":"name"}
+    - I can be called by [ramesh]("entity":"name")
+    - I am [vaibhav]("entity":"name")
+    - [mahesh wari]("entity":name) is my name
+
+
+- intent: get_email
+  examples: |
+    - My email-id is example@gmail.com
+    - example@gmail.com
+    - mail id is example@gmail.com
+
+- intent: get_number
+  examples: |
+    - My mobile number is 9443563123
+    - I had a mobile number as 8771219228
+    - My number is 8778119233
+    - 9443563104
+
+- intent: book
+  examples: |
+    - Book for the appointment
+    - want to talk to you.
+    - contact us
+    - can i contact you.
+
+- intent: About_you
+  examples: |
+    - Looking about you
+    - i want to know about your company
+    - what services are you providing.
+
+- lookup: name
+  examples: |
+    - ./lookups/names.txt
+    - dipesh 
+    - ezhil
+    - fazail
+    - dharani
+    - ganesh
+    - harini
+    - ilakiya
+    - jain
+    - kalai
+    - lokesh waran
+    - mano
+    - naveen
+    - oran
+    - pratiba
+    - ramesh
+    - sharmila
+    - tarun
+    - varun
+    - whashinton sundar
+
+  
+- regex: name
+  examples: |
+    - [aA-zZ]\\w{5,29}$

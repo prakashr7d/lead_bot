@@ -1,0 +1,26 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: form activation
+  steps:
+  - intent: book
+  - action: UserForm
+  - active_loop: UserForm
+
+- rule: SubmitForm
+  condition:
+  - active_loop: UserForm
+  steps:
+  - action: UserForm
+  - active_loop: null
+  - action: action_submit
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_goodbye
+
