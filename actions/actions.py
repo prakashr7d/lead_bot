@@ -12,7 +12,7 @@ class ActionHelloWorld(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        name = tracker.get_slot("name")
+        name = tracker.get_slot("PERSON")
         email = tracker.get_slot("email")
         number = tracker.get_slot("phone-number")
         connector.user_commit(name,email,number)
