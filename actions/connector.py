@@ -4,7 +4,7 @@ import math, random
 mydb = mysql.connector.connect(
   host="localhost",
   user="prakash",
-  password="Forfacebook*1",
+  password="",
   database = "lead_bot")
 
 mycursor= mydb.cursor()
