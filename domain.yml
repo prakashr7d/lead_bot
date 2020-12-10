@@ -10,6 +10,7 @@ intents:
 - About_you
 - nlu_fallback
 - you_bot
+- asking_ar
 entities:
 - PERSON
 - email
@@ -39,7 +40,7 @@ responses:
   - text: we are providing IT services for more companies all over the world and for
       more information https://www.compactgyan.com/about_us
   utter_ask_PERSON:
-  - text: what is your name?
+  - text: Enter your name
   utter_ask_phone-number:
   - text: what is your phone number
   utter_ask_email:
@@ -52,6 +53,13 @@ responses:
   - text: You are going out of scope
   utter_you_bot:
   - text: Yes, i am a bot created by compact gyan and powered by rasa....
+  utter_ar:
+  - image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Mbn7iz_c4QQalnnVqUKhmQHaFj%26pid%3DApi&f=1
+    text: Yes, we are creating AR
+  - image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.f1INMDro4tEp_-YWdKFRAwHaE8%26pid%3DApi&f=1
+    text: Yes, we are creating AR
+  - image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.WYOtg2joHO46OeYU0uOi1gHaFh%26pid%3DApi&f=1
+    text: Yes, we are creating AR
 actions:
 - action_submit
 forms:

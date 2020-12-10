@@ -28,3 +28,7 @@ rules:
   steps:
   - intent: you_bot
   - action: utter_you_bot
+- rule: Augumented Reality
+  steps:
+  - intent: asking_ar
+  - action: utter_ar

@@ -15,6 +15,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Hi
+    - greet
+    - Hello
 - intent: goodbye
   examples: |
     - good afternoon
@@ -27,6 +30,9 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - Ok
+    - Bye
+    - Drink water
 - intent: get_email
   examples: |
     - My name is prakash email-id is example@gmail.com
@@ -37,6 +43,9 @@ nlu:
     - example@gmail.com
     - mail id is example@gmail.com
     - Prakashr7d@gmail.com
+    - vaibhav.goel2@gmail.com
+    - Abcd@gmail.com
+    - prakashr7d@gmail.com
 - intent: get_number
   examples: |
     - My mobile number is 9443562123
@@ -44,6 +53,8 @@ nlu:
     - My number is 8778114233
     - 9443244104
     - 8870539376
+    - 1234567891
+    - 8778119228
 - intent: book
   examples: |
     - Book for the appointment
@@ -51,14 +62,43 @@ nlu:
     - contact us
     - can i contact you.
     - I want to book for appointment
+    - What about my appointment
 - intent: About_you
   examples: |
     - Looking about you
     - i want to know about your company
     - what services are you providing.
     - looking about you
+    - What is compact gyan
+    - what is compact gyan
 - intent: you_bot
   examples: |
     - bot??
     - rasa bot
     - are you a bot
+    - rasa bot?
+    - Rasa bot
+    - Are you a bot
+- intent: asking_ar
+  examples: |
+    - Are you making AR
+    - Augumented Reality
+    - Are you doing Augumented Reality
+    - Is this company doing AR
+    - Do you work in ar
+- intent: nlu_fallback
+  examples: |
+    - Abcd
+    - K
+    - Are you doing the ar works...
+    - Confused
+- intent: chitchat/appreciate
+  examples: |
+    - Super
+    - Awesome
+    - wonderful
+    - your sweet name please
+- intent: chitchat/name
+  examples: |
+    - what is your name
+    - May i know your name
