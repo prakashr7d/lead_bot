@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,11 +15,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
-    - cu
     - good by
     - cee you later
     - good night
@@ -30,8 +27,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
-
 - intent: get_email
   examples: |
     - My name is prakash email-id is example@gmail.com
@@ -41,24 +36,23 @@ nlu:
     - prakash
     - example@gmail.com
     - mail id is example@gmail.com
-
+    - Prakashr7d@gmail.com
 - intent: get_number
   examples: |
     - My mobile number is 9443562123
     - I had a mobile number as 8771254228
     - My number is 8778114233
     - 9443244104
-
+    - 8870539376
 - intent: book
   examples: |
     - Book for the appointment
     - want to talk to you.
     - contact us
     - can i contact you.
-
+    - I want to book for appointment
 - intent: About_you
   examples: |
     - Looking about you
     - i want to know about your company
     - what services are you providing.
-

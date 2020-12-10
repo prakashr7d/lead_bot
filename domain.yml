@@ -43,7 +43,7 @@ responses:
   utter_ask_email:
   - text: what is your Email_id
   utter_goodbye:
-  - text: Bye
+  - text: Thanks for contacting us  {PERSON},  we will be contacting you soon....
 actions:
 - action_submit
 forms:
