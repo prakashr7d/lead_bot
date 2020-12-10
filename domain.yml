@@ -9,6 +9,7 @@ intents:
 - book
 - About_you
 - nlu_fallback
+- you_bot
 entities:
 - PERSON
 - email
@@ -49,6 +50,8 @@ responses:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_default:
   - text: You are going out of scope
+  utter_you_bot:
+  - text: Yes, i am a bot created by compact gyan and powered by rasa....
 actions:
 - action_submit
 forms:

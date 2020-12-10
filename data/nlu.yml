@@ -56,3 +56,9 @@ nlu:
     - Looking about you
     - i want to know about your company
     - what services are you providing.
+    - looking about you
+- intent: you_bot
+  examples: |
+    - bot??
+    - rasa bot
+    - are you a bot
