@@ -1,18 +1,14 @@
 version: "2.0"
-
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 - rule: form activation
   steps:
   - intent: book
   - action: UserForm
   - active_loop: UserForm
-
 - rule: SubmitForm
   condition:
   - active_loop: UserForm
@@ -23,4 +19,8 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_goodbye
-
+- rule: Implementation of the Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback

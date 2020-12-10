@@ -8,6 +8,7 @@ intents:
 - get_email
 - book
 - About_you
+- nlu_fallback
 entities:
 - PERSON
 - email
@@ -44,6 +45,10 @@ responses:
   - text: what is your Email_id
   utter_goodbye:
   - text: Thanks for contacting us  {PERSON},  we will be contacting you soon....
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: You are going out of scope
 actions:
 - action_submit
 forms:
