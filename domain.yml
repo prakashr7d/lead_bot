@@ -11,6 +11,7 @@ intents:
 - nlu_fallback
 - you_bot
 - asking_ar
+- chitchat
 entities:
 - PERSON
 - email
@@ -60,6 +61,11 @@ responses:
     text: Yes, we are creating AR
   - image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.WYOtg2joHO46OeYU0uOi1gHaFh%26pid%3DApi&f=1
     text: Yes, we are creating AR
+  utter_chitchat/name:
+  - text: My name is lead bot
+  utter_chitchat/appreciate:
+  - image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.iAQwtzjW9HcM7jYh_VCnJQHaEL%26pid%3DApi&f=1
+    text: Thanks, these all appreciation goes to the development team.
 actions:
 - action_submit
 forms:
